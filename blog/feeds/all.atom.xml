@@ -16,66 +16,44 @@ brython(1);
 }
 &lt;/script&gt;
 
-&lt;!-- 以下實際利用  Brython 畫圖 --&gt;
+&lt;!-- 以下可以執行  Brython 程式 --&gt;
 
-&lt;div id="con"&gt;&lt;/div&gt;
+&lt;div id="id3"&gt;&lt;/div&gt;
 
 &lt;script type="text/python3"&gt;
-form browser improt alert
-form browser improt document
-form browser improt html
+from browser import document
+from browser import html
 import random
-#print("test")
-#alert("test")
-con1 = document["con"]
-標準答案 = random.randint(1, 100)
-con1 &lt;= str(標準答案)
 
-try:
-  for i in range(1):
-     #con1 &lt;="test"+ "&lt;br /&gt;"
-     yourInput=int(input("請輸入一個整數"))
-     #con1 &lt;="test"+ html.BR()
-     output = yourInput + 1
-     con &lt;= "你輸入的整數加上1之後,為" + str(output)
-
-except:
-    con1 &lt;= "拜託請輸入整數"
-
- def b1(e):
-     alert("click123")
-
-    #coding: utf-8
-# 猜數字遊戲
-import random
 id3 = document["id3"]
 def guess(ev):
     # 清除 id3 中的內容
     id3.clear()
     id3 &lt;= "開始玩猜數字遊戲" + html.BR()
-
- 標準答案 = random.randint(1, 100)
- 你猜的數字 = int(input("請輸入您所猜的整數:"))
- 猜測次數 = 1
- while 標準答案 != 你猜的數字:
-     if 標準答案 &lt; 你猜的數字:
-         #print("太大了，再猜一次 :)加油")
-         id3.clear()
+    標準答案 = random.randint(1, 100)
+    你猜的數字 = int(input("請輸入您所猜整數:"))
+    猜測次數 = 1
+    while 標準答案 != 你猜的數字:
+        if 標準答案 &lt; 你猜的數字:
+            #print("太大了，再猜一次 :)加油")
+            # 清除 id3 中的內容
+            id3.clear()
             id3 &lt;= "猜第" + str(猜測次數) + "次, 太大了，再猜一次 :)加油" + html.BR()
-     else:
-         print("太小了，再猜一次 :)加油")
-         id3.clear()
+        else:
+            #print("太小了，再猜一次 :)加油")
+            # 清除 id3 中的內容
+            id3.clear()
             id3 &lt;= "猜第" + str(猜測次數) + "次, 太小了，再猜一次 :)加油" + html.BR()
-    你猜的數字 = int(input("請輸入您所猜的整數:"))
-    猜測次數 += 1
+        你猜的數字 = int(input("請輸入您所猜整數:"))
+        猜測次數 += 1
 
- #print("猜對了！總共猜了", 猜測次數, "次")
- id3 &lt;= "猜對了！答案為" + str(標準答案) + ", 總共猜了" + str(猜測次數) + "次"     
-document["b1"].bind("click",b1)   
+    #print("猜對了！總共猜了", 猜測次數, "次")
+    id3 &lt;= "猜對了！答案為" + str(標準答案) + ", 總共猜了" + str(猜測次數) + "次"
 
+document["but3"].bind("click", guess)
 &lt;/script&gt;
 
-&lt;p&gt;&lt;button id="b1"&gt;玩猜數字遊戲&lt;/button&gt;&lt;/p&gt;</summary><category term="Brython"></category></entry><entry><title>W15 W14影片整理</title><link href="./w15-w14ying-pian-zheng-li.html" rel="alternate"></link><published>2016-12-19T14:35:00+08:00</published><updated>2016-12-19T14:35:00+08:00</updated><author><name>40523211</name></author><id>tag:,2016-12-19:./w15-w14ying-pian-zheng-li.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+&lt;p&gt;&lt;button id="but3"&gt;玩猜數字遊戲&lt;/button&gt;&lt;/p&gt;</summary><category term="Brython"></category></entry><entry><title>W15 W14影片整理</title><link href="./w15-w14ying-pian-zheng-li.html" rel="alternate"></link><published>2016-12-19T14:35:00+08:00</published><updated>2016-12-19T14:35:00+08:00</updated><author><name>40523211</name></author><id>tag:,2016-12-19:./w15-w14ying-pian-zheng-li.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
 &lt;p&gt;setting 放大設定字元&lt;/p&gt;
 &lt;p&gt;ctrl + u 節點向上移
