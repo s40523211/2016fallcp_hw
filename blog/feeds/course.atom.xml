@@ -56,8 +56,9 @@ document["but3"].bind("click", guess)
 &lt;/script&gt;
 
 &lt;p&gt;&lt;button id="but3"&gt;玩猜數字遊戲&lt;/button&gt;&lt;/p&gt;
-&lt;p&gt;w15週心得與程式範例:&lt;/p&gt;
-&lt;p&gt;心得:
+&lt;p&gt;w15週心得與程式範例:
+https://vimeo.com/198637447
+心得:
 &lt;!-- 導入 Brython 標準程式庫 --&gt;&lt;/p&gt;
 &lt;script type="text/javascript" 
     src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython_dist.js"&gt;
@@ -92,9 +93,12 @@ def get_input(ev):
     alert("輸入為:"+str(the_input))
 
 document['ch01'].bind('click',get_input)
+&lt;/pre&gt;
+
 &lt;/script&gt;
 
 &lt;div id="container"&gt;&lt;/div&gt;
+
 &lt;script type="text/python3"&gt;
 from browser import document as doc
 from browser import html
@@ -113,8 +117,8 @@ def numPrint(ev):
 # 與 id 為 'w13' 對應的 button 綁定, 且滑鼠 click 後, 呼叫 numPrint 函式執行
 doc['w13'].bind('click',numPrint)
 &lt;/script&gt;
-&lt;button id="w13"&gt;取重複執行次數後, 列印出來&lt;/button&gt;
 
+&lt;p&gt;&lt;button id="w13"&gt;取重複執行次數後, 列印出來&lt;/button&gt;&lt;/p&gt;
 &lt;pre class="brush: python"&gt;
 
 &lt;div id="container"&gt;&lt;/div&gt;
