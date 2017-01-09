@@ -4,7 +4,7 @@
 &lt;p&gt;w17週心得與程式範例:&lt;/p&gt;
 &lt;p&gt;心得:新年快樂&lt;/p&gt;
 &lt;p&gt;w16週心得與程式範例:&lt;/p&gt;
-&lt;p&gt;心得:
+&lt;p&gt;心得:利用python製作遊戲,相當有趣
 &lt;!-- 導入 Brython 標準程式庫 --&gt;&lt;/p&gt;
 &lt;script type="text/javascript" 
     src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython_dist.js"&gt;
@@ -58,7 +58,7 @@ document["but3"].bind("click", guess)
 &lt;p&gt;&lt;button id="but3"&gt;玩猜數字遊戲&lt;/button&gt;&lt;/p&gt;
 &lt;p&gt;w15週心得與程式範例:
 https://vimeo.com/198637447
-心得:
+心得:利用python,
 &lt;!-- 導入 Brython 標準程式庫 --&gt;&lt;/p&gt;
 &lt;script type="text/javascript" 
     src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython_dist.js"&gt;
@@ -120,7 +120,6 @@ doc['w13'].bind('click',numPrint)
 
 &lt;p&gt;&lt;button id="w13"&gt;取重複執行次數後, 列印出來&lt;/button&gt;&lt;/p&gt;
 &lt;pre class="brush: python"&gt;
-
 &lt;div id="container"&gt;&lt;/div&gt;
 &lt;script type="text/python3"&gt;
 from browser import document as doc
@@ -139,6 +138,8 @@ def numPrint(ev):
 
 # 與 id 為 'w13' 對應的 button 綁定, 且滑鼠 click 後, 呼叫 numPrint 函式執行
 doc['w13'].bind('click',numPrint)
+&lt;/pre&gt;
+
 &lt;/script&gt;</summary><category term="Brython"></category></entry><entry><title>W16</title><link href="./w16.html" rel="alternate"></link><published>2016-12-26T14:35:00+08:00</published><updated>2016-12-26T14:35:00+08:00</updated><author><name>40523211</name></author><id>tag:,2016-12-26:./w16.html</id><summary type="html">&lt;p&gt;w16&lt;/p&gt;
 
 
